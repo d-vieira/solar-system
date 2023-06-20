@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#saturn {
+  transform: rotate(-12deg);
+}
+
+.jupiter {
+  margin-right: -60px;
+  margin-left: -20px;
+}
+
+.uranus {
+  margin-left: -72px;
+}
+
+.neptune {
+  margin-left: -40px;
+}
+
+@media not all and (min-width: 768px) {
+  .neptune {
+    margin-left: -5px;
+  }
+
+  .jupiter {
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+  
+  .uranus {
+    margin-left: 0px;
+  }
+
+  #saturn {
+    transform: rotate(25deg);
+  }
+}
